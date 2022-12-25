@@ -2,16 +2,19 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 const SignUp = () => {
-    const form = useRef();
-    const sendEmail = (e) => {
-    
+	let [subLead, setSubLead]= React.useState(false)
+
+	const form = useRef();
+   function sendEmail(e){
         emailjs.sendForm('service_mky8poq', 'template_z0lq09l', form.current, 'Uowqrk_9I1fFToz7P')
           .then((result) => {
-              console.log(result.text);
+              console.log(result.text)
+			  setSubLead(subLead = true)
           }, (error) => {
               console.log(error.text);
           });
       };
+
 
   return (
     <section className="p-6 dark:bg-gray-800 dark:text-gray-50" id="signup">
@@ -44,11 +47,11 @@ const SignUp = () => {
                 <div className="col-span-full sm:col-span-3">
 					<label htmlFor="amount" className="text-sm">Amount</label>
 					<select id="amount" name="amount" placeholder="Amount" className="w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 dark:border-gray-700 dark:text-gray-900" required>
-                    <option value="10000">£5,000-£10,000</option>
-                    <option value="25000">£10,000-£25,000</option>
-                    <option value="50000">£25,000-£50,000</option>
-                    <option value="100000">£50,000-£100,000</option>
-                    <option value="100000">£100,000+</option>
+                    <option value="£5,000-£10,000">£5,000-£10,000</option>
+                    <option value="£10,000-£25,000">£10,000-£25,000</option>
+                    <option value="£25,000-£50,000">£25,000-£50,000</option>
+                    <option value="£50,000-£100,000">£50,000-£100,000</option>
+                    <option value="£100000+">£100,000+</option>
                     </select>
 				</div>
                 <div className="col-span-full sm:col-span-3">
@@ -64,6 +67,7 @@ const SignUp = () => {
 					<div className="flex items-center space-x-2">
 						<button type="button" onClick={sendEmail} value="Send" className="px-4 py-2 border rounded-md border-gray-100 hover:bg-black hover:text-white">Submit</button>
 					</div>
+					{subLead && <div><p className="text-green-600">Thanks for submitting your details, You will be contacted you shortly</p></div>}
 				</div>
 			</div>
             
