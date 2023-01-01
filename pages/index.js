@@ -8,6 +8,12 @@ import SignUp from "../src/components/SignUp";
 import Promo from "../src/components/Promo";
 import Footer from "../src/components/Footer";
 import PromoReverse from "../src/components/PromoReverse";
+import Partners from "../src/components/Partners";
+import logoOne from '../public/barratt.png'
+import logoTwo from '../public/hammerson.png'
+import logoThree from '../public/berkley.png'
+import logoFour from '../public/shaftersbury.png'
+import logoFive from '../public/bellway.png'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,6 +30,13 @@ export default function Home() {
     />
     <Info />
     <Steps />
+    <Partners 
+    logoOne={logoOne}
+    logoTwo={logoTwo}
+    logoThree={logoThree}
+    logoFour={logoFour}
+    logoFive={logoFive}
+    />
     <PromoReverse 
     image="https://source.unsplash.com/QR_vT8_hBZM"
     title="We Provide Completely Free Consultation Services"
@@ -31,6 +44,7 @@ export default function Home() {
     link="signup"
     />
     <SignUp />
+
     <Footer />
     </>
   )

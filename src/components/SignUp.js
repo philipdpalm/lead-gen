@@ -18,10 +18,11 @@ const SignUp = () => {
 
   return (
     <section className="p-6 dark:bg-gray-800 dark:text-gray-50" id="signup">
+	<h2 className="text-5xl text-black font-bold text-center dark:text-gray-50 mb-20">Sign Up</h2>
     <div className="container mx-auto">
 		{/* <h2 className="text-5xl font-bold text-center dark:text-gray-50">Leave Your Details</h2> */}
         </div>
-	<form ref={form} className="container flex flex-col mx-auto space-y-12 ng-untouched ng-pristine ng-valid">
+	<form ref={form} className="container flex flex-col mx-auto space-y-12 ng-untouched ng-pristine ng-valid mb-10">
 		<fieldset className="grid grid-cols-4 gap-6 p-6 rounded-md shadow-sm dark:bg-gray-900">
         <div className="space-y-2 col-span-full lg:col-span-1">
 				<p className="font-medium">Submit Your Information</p>

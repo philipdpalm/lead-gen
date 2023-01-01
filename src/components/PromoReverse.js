@@ -4,7 +4,7 @@ import { Link } from 'react-scroll'
 
 const PromoReverse = (props) => {
   return (
-    <section className="p-4 lg:p-8 dark:bg-gray-800 dark:text-gray-100 rounded-m">
+    <section className="p-4 lg:p-8 dark:bg-gray-800 dark:text-gray-100 rounded-m bg-black text-white">
 	<div className="container mx-auto space-y-12">
 		<div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
 			<img src={props.image} alt="homes" className="h-80 dark:bg-gray-500"  />

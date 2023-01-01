@@ -21,6 +21,10 @@ const Header = () => {
         link="steps"  
         />
         <NavItem 
+         option="Partners"   
+         link="partners"
+        />
+        <NavItem 
          option="Sign Up"  
          link="signup"
         />
