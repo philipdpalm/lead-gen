@@ -12,7 +12,7 @@ const Info = () => {
 			</div>
 			<div>
 				<h3 className="font-semibold">Why Invest in a REIT?</h3>
-				<p className="mt-1 dark:text-gray-400">We provide a way for individuals to earn a share of the income produced through property ownership – without actually needing to buy and manage a property, especially if you can't afford it, this provides an opportunity to still earn on the incredible returns. So you might not enough money to buy a house but you can still earn competitive returns on your investments. Earning returns of over 9%</p>
+				<p className="mt-1 dark:text-gray-400">We provide a way for individuals to earn a share of the income produced through property ownership – without actually needing to buy and manage a property, especially if you can't afford it, this provides an opportunity to still earn on the incredible returns. So you might not enough money to buy a house but you can still earn competitive returns on your investments. Earning returns of over 9%.</p>
 			</div>
 			<div>
 				<h3 className="font-semibold">Why Us?</h3>
