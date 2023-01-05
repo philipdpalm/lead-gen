@@ -25,7 +25,7 @@ export default function Home() {
     <Promo 
     image="https://source.unsplash.com/glO8JbrAj5k"
     title="Easy & Safe Property Investing"
-    content="Our team will contact you and provide advice on the best investment for you at no cost with a low barrier to entry"
+    content="Our team will connect you with trusted advisers from leading entities, advising you on the best investment for you at no cost"
     link="signup"
     />
     <Info />
